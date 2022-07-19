@@ -30,7 +30,7 @@ def fx_create_log(path):
 
 def fx_write_log(message, log_path):
     ts = datetime.datetime.today().strftime('%Y-%m-%d %H:%M:%S - ')
-    file = open(log_path + 'log_delete_files.txt', 'a')
+    file = open(log_path + 'log.txt', 'a')
     file.write(ts + message)
     file.close()
 
